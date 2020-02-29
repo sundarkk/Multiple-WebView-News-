@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CategoryActivity"
+    android:orientation="vertical"
+    android:layout_margin="10dp"
+    android:background="#37474F">
+
+<ImageView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:src="@drawable/img"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardElevation="10dp"
+        app:cardCornerRadius="20dp"
+        app:cardBackgroundColor="#6ABAD5DB"
+        android:layout_marginTop="5dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="20dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Choose Languages"
+                android:gravity="center"
+                android:textSize="30sp"
+                android:typeface="serif"
+                android:textColor="#263238"
+                style="@style/Base.CardView"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=" हिन्दी "
+                android:textAllCaps="false"
+                android:layout_gravity="center"
+                android:textColor="#37474F"
+                android:layout_marginTop="10dp"
+                android:textSize="25sp"
+                android:typeface="sans"
+                android:id="@+id/BtnHindi"/>
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="English"
+                android:textAllCaps="false"
+                android:layout_gravity="center"
+                android:textColor="#37474F"
+                android:layout_marginTop="10dp"
+                android:textSize="25sp"
+                android:typeface="sans"
+                android:id="@+id/BtnEng"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
